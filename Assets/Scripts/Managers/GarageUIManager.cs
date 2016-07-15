@@ -18,6 +18,7 @@ public class GarageUIManager : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Escape)) { TogglePauseMenu(); }
 		else if (Input.GetKeyDown(KeyCode.Q)) { ToggleInventoryMenu(); }
+		else if (Input.GetKeyDown(KeyCode.E) && !GlobalVars.IsInMenu()) if (WorldTransitionManager.PrepareVoxels()) WorldTransitionManager.LoadMap();
 	}
 
 	public void DebugButton()
@@ -45,7 +46,7 @@ public class GarageUIManager : MonoBehaviour {
 		int y = 12;
 		//int y = 0;
 
-		foreach (GameObject b in InventoryManager.voxels)
+		foreach (GameObject b in VoxelManager.voxels)
 		{
 			int tmpInt = index;
 			GameObject button = Instantiate(VoxelSelectButton);

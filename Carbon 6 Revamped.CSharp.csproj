@@ -75,12 +75,17 @@
     <Compile Include="Assets\Scripts\Data\VoxelData.cs" />
     <Compile Include="Assets\Scripts\Garage\PlayerGarage.cs" />
     <Compile Include="Assets\Scripts\Garage\PreviewCollision.cs" />
+    <Compile Include="Assets\Scripts\GhostScript.cs" />
     <Compile Include="Assets\Scripts\Managers\DataManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GarageManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GarageUIManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GlobalVars.cs" />
     <Compile Include="Assets\Scripts\Managers\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\Managers\OptionsManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\RobotManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\VoxelManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\WorldCameraManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\WorldTransitionManager.cs" />
     <Compile Include="Assets\Scripts\MiscUtilities.cs" />
     <Compile Include="Assets\Scripts\Player\Movement\PlayerGarageMouse.cs" />
     <Compile Include="Assets\Scripts\Player\Movement\PlayerGarageMovement.cs" />
@@ -89,6 +94,7 @@
     <Compile Include="Assets\Scripts\UI\BackgroundTint.cs" />
     <Compile Include="Assets\Scripts\UI\ScalableUIComponent.cs" />
     <Compile Include="Assets\Scripts\Voxels\Voxel.cs" />
+    <Compile Include="Assets\Scripts\Voxels\Wheel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

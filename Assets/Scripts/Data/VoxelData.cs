@@ -55,6 +55,8 @@ public struct VoxelPosition
 		this.z = z;
 	}
 
+	public Vector3 ToVector3() { return new Vector3(x, y, z); }
+
 	public override string ToString()
 	{
 		return x.ToString().PadLeft(3, '0') + y.ToString().PadLeft(3, '0') + z.ToString().PadLeft(3, '0');
@@ -73,6 +75,9 @@ public struct VoxelRotation
 		this.y = y;
 		this.z = z;
 	}
+
+	public Quaternion ToQuaternion() { return Quaternion.Euler(x, y, z); }
+
 	public override string ToString()
 	{
 		return x.ToString().PadLeft(3, '0') + y.ToString().PadLeft(3, '0') + z.ToString().PadLeft(3, '0');

@@ -47,6 +47,7 @@ public class DataManager : MonoBehaviour {
 		catch (Exception e)
 		{
 			Debug.Log("Error collecting voxel data.");
+			Debug.Log(e.Message);
 			return false;
 		}
 		return true;
@@ -55,6 +56,7 @@ public class DataManager : MonoBehaviour {
 	void AbortCollection()
 	{
 		RobotData.voxels.Clear();
+		RobotData.Load();
 	}
 
 	void LoadVoxelData()
@@ -64,7 +66,7 @@ public class DataManager : MonoBehaviour {
 		Debug.Log("Loading " + RobotData.voxels.Count.ToString() + " Voxel(s) into Garage.");
 		foreach (VoxelData v in RobotData.voxels)
 		{
-			GameObject voxel = Instantiate(InventoryManager.GetVoxel(v.UID.DecodeID()));
+			GameObject voxel = Instantiate(VoxelManager.GetVoxel(v.UID.DecodeID()));
 			voxel.transform.position = new Vector3(v.position.x, v.position.y, v.position.z);
 			voxel.transform.rotation = Quaternion.Euler(v.rotation.x, v.rotation.y, v.rotation.z);
 		}
