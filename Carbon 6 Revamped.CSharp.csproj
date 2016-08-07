@@ -95,6 +95,7 @@
     <Compile Include="Assets\Scripts\UI\ScalableUIComponent.cs" />
     <Compile Include="Assets\Scripts\Voxels\Voxel.cs" />
     <Compile Include="Assets\Scripts\Voxels\Wheel.cs" />
+    <Compile Include="Assets\Scripts\WheelPosition.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

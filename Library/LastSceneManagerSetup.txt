@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/wheel test.unity
+- path: Assets/Garage.unity
   isLoaded: 1
   isActive: 1
